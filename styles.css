@@ -1,0 +1,38 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background: url(img/fon.jpg);
+    background-size: cover;
+        
+}
+
+.earth {
+    width: 250px;
+    display: block;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    animation: linear 10s earth infinite;
+}
+
+.moon {
+    margin-left: -75px;
+    margin-top: -75px;
+    display: block;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    width: 50px;
+    animation: linear 5s moon infinite;
+    transform-origin: 175px 175px;
+}
+
+@keyframes moon {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+
+@keyframes earth {
+    100%{transform: rotate(360deg);}
+}
